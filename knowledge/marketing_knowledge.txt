@@ -1,0 +1,30 @@
+CTR measures the percentage of users who click an advertisement after seeing it.
+A low CTR can indicate weak ad creatives, poor targeting, or an irrelevant message.
+
+CPC represents the average cost paid for each click.
+A high CPC can indicate expensive keywords, strong competition, or inefficient targeting.
+
+Conversion Rate measures the percentage of clicks that result in conversions.
+A low conversion rate may indicate landing page problems, weak offers, poor audience targeting, or mismatch between advertisement and landing page.
+
+CPA represents the average cost required to acquire one customer or conversion.
+A high CPA generally indicates inefficient campaign spending and should be investigated.
+
+ROAS measures revenue generated for every unit of advertising spend.
+Higher ROAS generally indicates better advertising efficiency.
+
+When ROAS is low, marketers should review campaign targeting, creatives, landing pages, audience quality, and budget allocation.
+
+When CTR decreases significantly, marketers should test different ad creatives, headlines, calls-to-action, and audience segments.
+
+When conversion rate decreases while CTR remains strong, the problem may be occurring after the click, such as landing page experience, offer quality, pricing, or checkout experience.
+
+Budget should generally be shifted toward campaigns that consistently demonstrate strong ROAS and conversion performance.
+
+A campaign should not be evaluated using a single KPI.
+CTR, CPC, conversion rate, CPA, ROAS, spend, and revenue should be considered together.
+
+Historical performance is important when making marketing decisions.
+Recent changes should be compared with previous periods to identify meaningful trends.
+
+Marketing recommendations should consider business objectives, available budget, audience characteristics, campaign goals, and historical performance.

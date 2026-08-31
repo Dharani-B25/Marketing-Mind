@@ -1,0 +1,142 @@
+DIGITAL MARKETING KNOWLEDGE BASE
+
+CTR - Click Through Rate
+
+CTR measures the percentage of users who clicked an advertisement after seeing it.
+
+CTR = Clicks / Impressions × 100
+
+A low CTR may indicate weak ad creatives, irrelevant messaging, poor headlines, weak calls-to-action, or poor audience targeting.
+
+A high CTR usually indicates that the advertisement is relevant and attractive to the target audience.
+
+If CTR is low, marketers should test different headlines, images, videos, ad copy, calls-to-action, and audience segments.
+
+
+CONVERSION RATE
+
+Conversion Rate measures the percentage of clicks that result in conversions.
+
+Conversion Rate = Conversions / Clicks × 100
+
+A low conversion rate can happen when the landing page is poorly designed, the offer is weak, the checkout process is complicated, or the audience is not highly relevant.
+
+A high conversion rate generally indicates that the traffic, offer, and landing page are working effectively.
+
+If conversion rate is low, marketers should improve landing page experience, simplify the conversion process, strengthen the offer, and test different calls-to-action.
+
+
+ROAS - Return on Ad Spend
+
+ROAS measures how much revenue is generated for every unit of advertising spend.
+
+ROAS = Revenue / Advertising Spend
+
+A high ROAS indicates strong advertising efficiency.
+
+A low ROAS indicates that advertising spend is not generating sufficient revenue.
+
+Low ROAS can result from high advertising costs, poor targeting, low conversion rates, weak offers, or low-quality traffic.
+
+If ROAS is low, marketers should review campaign targeting, creatives, landing pages, conversion rates, and budget allocation.
+
+
+CPA - Cost Per Acquisition
+
+CPA measures the average advertising cost required to generate one conversion.
+
+CPA = Advertising Spend / Conversions
+
+A high CPA indicates that acquiring customers is expensive.
+
+A low CPA generally indicates efficient customer acquisition.
+
+CPA can increase because of expensive advertising, poor targeting, low CTR, low conversion rate, or inefficient landing pages.
+
+If CPA is high, marketers should optimize targeting, improve ad creatives, improve conversion rates, and reduce inefficient spending.
+
+
+AUDIENCE TARGETING
+
+Audience targeting determines which users see a marketing campaign.
+
+Relevant targeting can improve CTR, conversion rate, and ROAS.
+
+Poor targeting can result in low CTR, low conversion rate, high CPA, and low ROAS.
+
+If campaign performance is weak across multiple KPIs, audience relevance should be reviewed.
+
+
+AD CREATIVE
+
+Ad creative includes images, videos, headlines, descriptions, and calls-to-action.
+
+Strong creative can increase user attention and CTR.
+
+Weak or repetitive creative can reduce engagement and CTR.
+
+If CTR is below the target level, marketers should test new creatives, headlines, messages, formats, and calls-to-action.
+
+
+LANDING PAGE EXPERIENCE
+
+Landing page experience has a major impact on conversion rate.
+
+A slow, confusing, or poorly designed landing page can cause users to leave without converting.
+
+A good landing page should be relevant to the advertisement, load quickly, communicate the offer clearly, and provide a simple conversion process.
+
+If CTR is high but conversion rate is low, the landing page or offer should be investigated.
+
+
+OFFER QUALITY
+
+The quality and relevance of the offer can strongly influence conversions.
+
+An attractive and relevant offer can improve conversion rate.
+
+A weak, unclear, or poorly positioned offer can reduce conversions.
+
+If traffic and CTR are strong but conversions remain low, marketers should review the offer.
+
+
+CAMPAIGN SCALING
+
+A campaign with consistently strong ROAS, healthy conversion rate, and acceptable CPA may be suitable for gradual budget scaling.
+
+Budget should not be increased aggressively without monitoring performance.
+
+If ROAS decreases significantly after increasing budget, the campaign may be reaching less efficient audience segments.
+
+
+BUDGET OPTIMIZATION
+
+Marketing budget should be allocated toward campaigns that demonstrate stronger performance.
+
+Campaigns with low ROAS and high CPA may require optimization or budget reduction.
+
+Campaigns with strong ROAS and healthy conversion rates may receive additional budget after performance stability is confirmed.
+
+
+GENERAL DIAGNOSTIC RULES
+
+If CTR is low and conversion rate is low:
+Possible issues include poor targeting, weak creative, weak messaging, or irrelevant traffic.
+
+If CTR is high but conversion rate is low:
+Possible issues include landing page experience, offer quality, pricing, or conversion process.
+
+If CTR is low but conversion rate is high:
+The traffic that does click may be highly relevant, but the advertisement may not be attracting enough users.
+
+If ROAS is low and CPA is high:
+The campaign may be spending too much to acquire customers relative to the revenue generated.
+
+If ROAS is high and CPA is low:
+The campaign is generally showing strong acquisition efficiency.
+
+If revenue is increasing while ROAS is stable:
+The campaign may be scaling efficiently.
+
+If revenue is increasing but ROAS is decreasing:
+Revenue growth may be coming at the cost of lower advertising efficiency.

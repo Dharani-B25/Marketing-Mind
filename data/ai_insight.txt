@@ -1,0 +1,79 @@
+
+MARKETMIND AI BUSINESS INSIGHT
+
+Overall Performance
+-------------------
+Total Marketing Spend: ₹969,619.76
+
+Total Revenue: ₹170,343,696.72
+
+Total Conversions: 93,173
+
+Overall ROAS: 175.68
+
+
+Best Performing Campaign
+------------------------
+Campaign: Festival Offer
+
+ROAS: 185.88
+
+CTR: 4.60%
+
+Conversion Rate:
+8.59%
+
+
+Lowest Performing Campaign
+--------------------------
+Campaign: Retargeting
+
+ROAS: 156.60
+
+CTR: 4.36%
+
+Conversion Rate:
+7.83%
+
+
+Business Interpretation
+-----------------------
+
+The campaign with the highest ROAS is
+Festival Offer. This campaign
+is currently generating the strongest return
+relative to marketing spend.
+
+The campaign with the lowest ROAS is
+Retargeting. This campaign
+should be reviewed for targeting, creative
+quality, audience relevance and conversion
+performance.
+
+Recommended Business Direction
+------------------------------
+
+Focus more budget on campaigns with
+consistently strong ROAS.
+
+Review campaigns with weak ROAS before
+increasing their spending.
+
+Monitor CTR and conversion rate together
+because strong traffic does not always
+result in conversions.
+
+RAG MARKETING KNOWLEDGE
+-----------------------
+
+When ROAS is low, marketers should review campaign targeting, creatives, landing pages, audience quality, and budget allocation.
+
+ROAS measures revenue generated for every unit of advertising spend.
+Higher ROAS generally indicates better advertising efficiency.
+
+Budget should generally be shifted toward campaigns that consistently demonstrate strong ROAS and conversion performance.
+
+A campaign should not be evaluated using a single KPI.
+CTR, CPC, conversion rate, CPA, ROAS, spend, and revenue should be considered together.
+
+When CTR decreases significantly, marketers should test different ad creatives, headlines, calls-to-action, and audience segments.
