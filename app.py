@@ -18,215 +18,93 @@ st.set_page_config(
 )
 
 # ==========================================
-# MARKETING MIND AI - CLEAN PROFESSIONAL UI
+# ANIMATION ONLY
 # ==========================================
 
 st.markdown("""
 <style>
 
-/* ---------- BACKGROUND ---------- */
+/* ===== TITLE ANIMATION ===== */
 
-.stApp {
-    background: linear-gradient(
-        135deg,
-        #f5f9ff 0%,
-        #ffffff 45%,
-        #f3f0ff 100%
-    );
+h1 {
+    animation: titleEnter 1.2s ease-out;
 }
 
-
-/* ---------- MAIN CONTENT ---------- */
-
-.block-container {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-}
-
-
-/* ---------- MAIN TITLE ---------- */
-
-.main-title {
-    font-size: 42px;
-    font-weight: 800;
-    line-height: 1.15;
-    margin-bottom: 8px;
-
-    background: linear-gradient(
-        90deg,
-        #2563eb,
-        #6366f1,
-        #9333ea,
-        #2563eb
-    );
-
-    background-size: 300% 100%;
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    animation: gradientMove 5s ease infinite;
-}
-
-
-/* ---------- TITLE ANIMATION ---------- */
-
-@keyframes gradientMove {
+@keyframes titleEnter {
 
     0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
+        opacity: 0;
+        transform: translateY(-25px);
     }
 
     100% {
-        background-position: 0% 50%;
+        opacity: 1;
+        transform: translateY(0);
     }
 
 }
 
 
-/* ---------- SUBTITLE ---------- */
-
-.subtitle {
-    color: #475569;
-    font-size: 17px;
-    margin-bottom: 25px;
-}
-
-
-/* ---------- KPI CARDS ---------- */
+/* ===== KPI CARD ANIMATION ===== */
 
 [data-testid="stMetric"] {
-
-    background: rgba(255, 255, 255, 0.95);
-
-    border: 1px solid #e2e8f0;
-
-    border-radius: 16px;
-
-    padding: 18px;
-
-    box-shadow:
-        0 5px 20px rgba(30, 64, 175, 0.08);
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+    animation: cardEnter 0.8s ease-out;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+@keyframes cardEnter {
 
-/* KPI HOVER ANIMATION */
-
-[data-testid="stMetric"]:hover {
-
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 14px 30px rgba(37, 99, 235, 0.15);
-}
-
-
-/* ---------- KPI VALUE ---------- */
-
-[data-testid="stMetricValue"] {
-    color: #172554 !important;
-    font-weight: 800 !important;
-}
-
-
-/* ---------- KPI LABEL ---------- */
-
-[data-testid="stMetricLabel"] {
-    color: #64748b !important;
-}
-
-
-/* ---------- BUTTON ---------- */
-
-.stButton > button {
-
-    border-radius: 10px;
-
-    border: none;
-
-    background: linear-gradient(
-        135deg,
-        #2563eb,
-        #6366f1
-    );
-
-    color: white;
-
-    font-weight: 700;
-
-    transition: all 0.25s ease;
-
-    box-shadow:
-        0 5px 15px rgba(37, 99, 235, 0.20);
-}
-
-
-.stButton > button:hover {
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 10px 25px rgba(99, 102, 241, 0.30);
-}
-
-
-/* ---------- ALERT BOX ---------- */
-
-.stAlert {
-    border-radius: 14px !important;
-}
-
-
-/* ---------- DATAFRAME ---------- */
-
-[data-testid="stDataFrame"] {
-
-    border-radius: 14px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 5px 20px rgba(30, 64, 175, 0.07);
-}
-
-
-/* ---------- SIDEBAR ---------- */
-
-section[data-testid="stSidebar"] {
-
-    background: #f8fbff;
-
-    border-right: 1px solid #e2e8f0;
-}
-
-
-/* ---------- MOBILE ---------- */
-
-@media (max-width: 768px) {
-
-    .main-title {
-        font-size: 30px;
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
     }
 
-    .subtitle {
-        font-size: 15px;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ===== KPI HOVER ===== */
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-6px);
+}
+
+
+/* ===== BUTTON ANIMATION ===== */
+
+.stButton > button {
+    transition: transform 0.25s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ===== ALERT / INFO ANIMATION ===== */
+
+.stAlert {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 
 }
 
 </style>
 """, unsafe_allow_html=True)
-
-
-   
 
 # ==========================================
 # PROJECT PATH
