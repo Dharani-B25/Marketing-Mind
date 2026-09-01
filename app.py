@@ -17,6 +17,24 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #172554 50%,
+        #0f172a 100%
+    );
+}
+
+.main {
+    background: transparent;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 # ==========================================
 # PROJECT PATH
