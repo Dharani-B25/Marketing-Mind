@@ -1,3 +1,4 @@
+import os
 import chromadb
 from sentence_transformers import SentenceTransformer
 
@@ -8,11 +9,26 @@ print("========================================")
 
 
 # ==========================================
-# 1. LOAD KNOWLEDGE
+# 1. FIND PROJECT ROOT
+# ==========================================
+
+BASE_DIR = os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))
+)
+
+KNOWLEDGE_PATH = os.path.join(
+    BASE_DIR,
+    "knowledge",
+    "marketing_knowledge.txt"
+)
+
+
+# ==========================================
+# 2. LOAD KNOWLEDGE
 # ==========================================
 
 with open(
-    "knowledge/marketing_knowledge.txt",
+    KNOWLEDGE_PATH,
     "r",
     encoding="utf-8"
 ) as file:
@@ -21,7 +37,7 @@ with open(
 
 
 # ==========================================
-# 2. SPLIT KNOWLEDGE INTO CHUNKS
+# 3. SPLIT KNOWLEDGE INTO CHUNKS
 # ==========================================
 
 documents = [
@@ -35,7 +51,7 @@ print(f"\nKnowledge chunks: {len(documents)}")
 
 
 # ==========================================
-# 3. LOAD EMBEDDING MODEL
+# 4. LOAD EMBEDDING MODEL
 # ==========================================
 
 print("\nLoading embedding model...")
@@ -46,12 +62,10 @@ embedding_model = SentenceTransformer(
 
 
 # ==========================================
-# 4. CREATE VECTOR DATABASE
+# 5. CREATE IN-MEMORY VECTOR DATABASE
 # ==========================================
 
-client = chromadb.PersistentClient(
-    path="data/chroma_db"
-)
+client = chromadb.Client()
 
 
 collection = client.get_or_create_collection(
@@ -60,7 +74,7 @@ collection = client.get_or_create_collection(
 
 
 # ==========================================
-# 5. CREATE EMBEDDINGS
+# 6. CREATE EMBEDDINGS
 # ==========================================
 
 embeddings = embedding_model.encode(
@@ -69,7 +83,7 @@ embeddings = embedding_model.encode(
 
 
 # ==========================================
-# 6. STORE KNOWLEDGE
+# 7. STORE KNOWLEDGE
 # ==========================================
 
 ids = [
@@ -89,10 +103,11 @@ print("\nKnowledge successfully stored!")
 
 
 # ==========================================
-# 7. TEST SEARCH
+# 8. TEST SEARCH
 # ==========================================
 
 query = "Why can conversion rate decrease?"
+
 
 query_embedding = embedding_model.encode(
     [query]
