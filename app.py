@@ -370,6 +370,29 @@ st.markdown(
         pointer-events: none;
     }
 
+    .st-key-marketmind_chat_launcher::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        z-index: 3;
+        width: 13px;
+        height: 13px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background: #37d69a;
+        box-shadow: 0 2px 7px rgba(17, 120, 90, 0.25);
+        pointer-events: none;
+    }
+
+    .st-key-marketmind_clear_chat button {
+        min-width: 84px !important;
+        white-space: nowrap !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        font-size: 0.82rem !important;
+    }
+
     .st-key-marketmind_chat_panel {
         position: fixed !important;
         right: 26px !important;
@@ -3116,11 +3139,11 @@ chat_messages = st.session_state.setdefault("marketmind_chat_messages", [])
 
 if st.session_state.get("marketmind_chat_open", False):
     with st.container(key="marketmind_chat_panel"):
-        title_col, clear_col, close_col = st.columns([6, 1.6, 1])
+        title_col, clear_col, close_col = st.columns([3.8, 2.5, 0.8])
         with title_col:
             st.markdown("### 💬 Ask MarketMind")
         with clear_col:
-            if st.button("Clear", key="marketmind_clear_chat", use_container_width=True):
+            if st.button("Clear chat", key="marketmind_clear_chat", use_container_width=True):
                 st.session_state["marketmind_chat_messages"] = []
                 st.rerun()
         with close_col:
@@ -3154,7 +3177,7 @@ if st.session_state.get("marketmind_chat_open", False):
             st.rerun()
 else:
     with st.container(key="marketmind_chat_launcher"):
-        if st.button("💬", key="marketmind_open_chat", help="Ask MarketMind", type="primary"):
+        if st.button("🤖", key="marketmind_open_chat", help="Ask MarketMind", type="primary"):
             st.session_state["marketmind_chat_open"] = True
             st.rerun()
 
