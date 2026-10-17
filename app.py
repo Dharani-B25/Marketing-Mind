@@ -330,7 +330,7 @@ st.markdown(
     .st-key-marketmind_chat_launcher {
         position: fixed !important;
         right: 26px !important;
-        bottom: 26px !important;
+        bottom: 82px !important;
         z-index: 9999 !important;
         width: 68px !important;
         min-width: 68px !important;
@@ -373,10 +373,12 @@ st.markdown(
     .st-key-marketmind_chat_panel {
         position: fixed !important;
         right: 26px !important;
-        bottom: 26px !important;
+        top: 88px !important;
+        bottom: 82px !important;
         z-index: 9999 !important;
         width: min(390px, calc(100vw - 32px)) !important;
-        max-height: min(690px, calc(100vh - 40px)) !important;
+        max-height: none !important;
+        height: auto !important;
         overflow-y: auto !important;
         padding: 18px !important;
         border: 1px solid rgba(255, 255, 255, 0.9) !important;
