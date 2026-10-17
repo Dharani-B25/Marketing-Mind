@@ -1546,7 +1546,6 @@ st.subheader("📅 Date Filter")
 
 min_date = active_df["Date"].min().date()
 max_date = active_df["Date"].max().date()
-calendar_max_date = max(max_date, pd.Timestamp.today().date())
 
 # First time app open aagumbodhu full date range select aagum
 if "mm_date_range" not in st.session_state:
@@ -1555,13 +1554,8 @@ else:
     previous_start, previous_end = st.session_state.mm_date_range
 
     # Pudhu dataset upload pannina, date range-ai dataset bounds-kulla vechukkum
-    if previous_end < min_date or previous_start > calendar_max_date:
+    if previous_end < min_date or previous_start > max_date:
         st.session_state.mm_date_range = (min_date, max_date)
-    elif previous_start < min_date or previous_end > calendar_max_date:
-        st.session_state.mm_date_range = (
-            max(previous_start, min_date),
-            min(previous_end, calendar_max_date),
-        )
 
 # Quick date range buttons
 quick_cols = st.columns(4)
@@ -1579,14 +1573,12 @@ for col, (label, selected_range) in zip(quick_cols, quick_ranges):
 st.caption(
     f"Data available: {min_date.strftime('%d %b %Y')} – "
     f"{max_date.strftime('%d %b %Y')} · "
-    f"Date picker available through {calendar_max_date.strftime('%d %b %Y')}"
+    "Choose any date range; analysis uses matching dates present in the dataset."
 )
 
 selected_range = st.date_input(
     "Choose start and end dates",
     value=st.session_state.mm_date_range,
-    min_value=min_date,
-    max_value=calendar_max_date,
     key="mm_date_range",
     format="DD/MM/YYYY",
 )
